@@ -10,8 +10,8 @@ steps:
 - name: ubuntu:20.04
   image: ubuntu:20.04
   commands:
-    - sudo apt-get update
-    - sudo apt-get dist-upgrade
+    - apt-get update
+    - apt-get dist-upgrade
 
 trigger:
   branch:
@@ -33,8 +33,8 @@ steps:
 - name: ubuntu:20.04
   image: ubuntu:20.04
   commands:
-    - sudo apt-get update
-    - sudo apt-get dist-upgrade
+    - apt-get update
+    - apt-get dist-upgrade
 
 trigger:
   branch:
