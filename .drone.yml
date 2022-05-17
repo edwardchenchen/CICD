@@ -1,0 +1,43 @@
+kind: pipeline
+type: docker
+name: ubuntu AMD64
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: ubuntu:20:04
+  image: ubuntu:20:04
+  commands:
+    - sudo apt-get update
+    - sudo apt-get dist-upgrade
+
+trigger:
+  branch:
+  - master
+  event:
+  - push
+
+---
+
+kind: pipeline
+type: docker
+name: ubuntu ARM64
+
+platform:
+  os: linux
+  arch: arm64
+
+steps:
+- name: ubuntu:20:04
+  image: ubuntu:20:04
+  commands:
+    - sudo apt-get update
+    - sudo apt-get dist-upgrade
+
+trigger:
+  branch:
+  - master
+  event:
+  - push
