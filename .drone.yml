@@ -7,8 +7,8 @@ platform:
   arch: amd64
 
 steps:
-- name: ubuntu:20:04
-  image: ubuntu:20:04
+- name: ubuntu:20.04
+  image: ubuntu:20.04
   commands:
     - sudo apt-get update
     - sudo apt-get dist-upgrade
@@ -30,8 +30,8 @@ platform:
   arch: arm64
 
 steps:
-- name: ubuntu:20:04
-  image: ubuntu:20:04
+- name: ubuntu:20.04
+  image: ubuntu:20.04
   commands:
     - sudo apt-get update
     - sudo apt-get dist-upgrade
