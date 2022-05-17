@@ -11,7 +11,7 @@ steps:
   image: ubuntu:20.04
   commands:
     - apt-get update
-    - apt-get dist-upgrade
+    - apt-get dist-upgrade -y
 
 trigger:
   branch:
@@ -34,7 +34,7 @@ steps:
   image: ubuntu:20.04
   commands:
     - apt-get update
-    - apt-get dist-upgrade
+    - apt-get dist-upgrade -y
 
 trigger:
   branch:
