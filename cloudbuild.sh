@@ -1,2 +1,2 @@
 apt-get update
-apt-get diust-upgrade -y
+apt-get dist-upgrade -y
