@@ -32,7 +32,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.ACCESS_TOKEN }}
       -
         name: Build and push
         uses: docker/build-push-action@v3
@@ -40,5 +40,5 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            edwardchenchen/cide-demo:latest
-            ghcr.io/edwardchenchen/cide-demo:latest
+            edwardchenchen/cicd-demo:latest
+            ghcr.io/edwardchenchen/cicd-demo:latest
